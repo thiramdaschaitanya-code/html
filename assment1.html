@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Five Block Layout</title>
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+    }
+    body {
+      display: grid;
+      grid-template-rows: 80px 150px 1fr 150px 80px; /* header, fixed, flex, fixed, footer */
+      gap: 10px;
+      background: #fafafa;
+    }
+    header, footer, section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-family: Arial, sans-serif;
+      border: 1px solid #333;
+    }
+    header { background: #cfe2ff; }
+    .block-150-top { background: #d1e7dd; }
+    .block-flex { background: #fff3cd; }
+    .block-150-bottom { background: #f8d7da; }
+    footer { background: #e9ecef; }
+  </style>
+</head>
+<body>
+  <header>width(X), height(80px)</header>
+  <section class="block-150-top">height(150px)</section>
+  <section class="block-flex">height(remaining)</section>
+  <section class="block-150-bottom">height(150px)</section>
+  <footer>width(X), height(80px)</footer>
+</body>
+</html>
