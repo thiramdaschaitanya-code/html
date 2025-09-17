@@ -1,0 +1,30 @@
+
+    body {
+      border: 1px solid red;
+      height: 400px;
+      position: relative; /* makes absolute children relative to body */
+    }
+    div {
+      border: 1px solid;
+      height: 200px;
+      width: 200px;
+      text-align: center;
+      
+    }
+    #first {
+      background-color: green;
+      position: relative;
+      top: 20px;
+      left: 60px;
+    }
+    #second {
+      background-color: yellow;
+      position: relative;
+     
+    }
+    #third {
+      background-color: blue;
+      position: fixed;
+      top: 80px;
+      left: 80px;
+    }
