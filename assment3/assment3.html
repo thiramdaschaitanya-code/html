@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Half Page Layout</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 10px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 50vh; /* Half of the viewport height */
+        }
+        .header, .footer {
+            background-color: #ADD8E6;
+            height: 80px; /* Reduced to half of original 80px */
+            text-align: center;
+            line-height: 40px;
+        }
+        .content {
+            display: flex;
+            flex: 1;
+            gap: 10px;
+            margin: 10px 0;
+        }
+        .sidebar {
+            background-color: #FFDAB9;
+            width: 170px;
+            flex-shrink: 0;
+            text-align: center;
+            line-height: 100%;
+        }
+        .main {
+            background-color: #90EE90;
+            flex: 1;
+            text-align: center;
+            line-height: 100%;
+        }
+        .footer {
+            background-color: #E0E0E0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">width(X), height(40px)</div>
+        <div class="content">
+            <div class="sidebar">w(170px), height(remaining)</div>
+            <div class="main">w(remaining)</div>
+        </div>
+        <div class="footer">width(X), height(40px)</div>
+    </div>
+</body>
+</html>

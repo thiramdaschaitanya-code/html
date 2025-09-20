@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Five-Row Layout</title>
+<style>
+  :root{
+    --header-h:80px;
+    --footer-h:80px;
+    --fixed-h:150px;     /* the green & red blocks */
+    --gap:16px;
+    --radius:14px;
+    --pad:18px;
+    --bg:#f5f7fb;
+    --ink:#0f172a;
+  }
+
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0;
+    font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,Helvetica,sans-serif;
+    color:var(--ink);
+    background:#eef2f7;
+  }
+
+  /* page grid */
+  .page{
+    min-height:100vh;                     /* exactly a viewport tall */
+    display:grid;
+    grid-template-rows:
+      var(--header-h)
+      var(--fixed-h)
+      1fr                                  /* “remaining” */
+      var(--fixed-h)
+      var(--footer-h);
+    gap:var(--gap);
+    padding:24px;
+  }
+
+  /* shared card style */
+  .card{
+    border:1px solid #d8dee9;
+    border-radius:var(--radius);
+    background:white;
+    padding:var(--pad);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 1px 2px rgba(0,0,0,.05);
+  }
+
+  header{ background:#dcecff }
+  .blk-150-top{ background:#dff1dd }
+  .blk-flex{ background:#ffe9cc; overflow:auto }
+  .blk-150-bottom{ background:#ffd6d6 }
+  footer{ background:#f2f2f2 }
+
+  /* optional: make it friendlier on very short screens */
+  @media (max-height:640px){
+    :root{ --fixed-h:120px }
+  }
+</style>
+</head>
+<body>
+  <main class="page">
+    <header class="card">width(X), height(80px)</header>
+    <section class="card blk-150-top">height(150px)</section>
+    <section class="card blk-flex">
+      height(remaining) — this area grows and can scroll if content overflows.
+    </section>
+    <section class="card blk-150-bottom">height(150px)</section>
+    <footer class="card">width(X), height(80px)</footer>
+  </main>
+</body>
+</html>
