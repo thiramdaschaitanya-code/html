@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Page Layout with Small Middle</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 10px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .header, .footer {
+            background-color: #ADD8E6;
+            height: 80px;
+            text-align: center;
+            line-height: 80px;
+        }
+        .middle {
+            display: flex;
+            flex: 1;
+            gap: 10px;
+            margin: 10px 0;
+            min-height: 0; /* Ensure flex items can shrink */
+        }
+        .left, .right-top {
+            background-color: #FFDAB9;
+            flex: 1;
+            text-align: center;
+            line-height: 50%;
+        }
+        .right-top {
+            background-color: #90EE90;
+            height: 250px; /* Reduced height for smaller middle */
+        }
+        .bottom {
+            background-color: #FFB6C1;
+            height: 500px;
+            text-align: center;
+            line-height: 150px;
+            margin-top: 10px;
+        }
+        .footer {
+            background-color: #E0E0E0;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">width(X), height(80px)</div>
+    <div class="middle">
+        <div class="left">height(remaining)</div>
+        <div class="right-top">height(50px)</div>
+    </div>
+    <div class="bottom">height(150px)</div>
+    <div class="footer">width(X), height(80px)</div>
+</body>
+</html>
