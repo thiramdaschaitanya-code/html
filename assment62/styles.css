@@ -1,0 +1,73 @@
+body {
+    font-family: Arial;
+    background: #fff;
+    text-align: center;
+}
+
+.login-box {
+    background: red;
+    padding: 20px;
+    width: 300px;
+    margin: 30px auto;
+}
+
+.input-field {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.checkbox {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.login-btn {
+    background: rgb(56, 153, 108);
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.links {
+    margin: 15px 0;
+    font-size: 14px;
+    color: white;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.open-account {
+    margin-top: 10px;
+    color: white;
+}
+
+.open-account a {
+    color: white;
+    text-decoration: none;
+}
+
+.extra-box {
+    background: #0074d9;
+    color: white;
+    padding: 12px;
+    margin: 5px auto;
+    width: 300px;
+}
+
+.extra-box.light-blue {
+    background: #2196f3;
+}
+
+.extra-box a {
+    color: white;
+    text-decoration: none;
+}
