@@ -1,0 +1,54 @@
+body {
+    background-color: #000;
+    color: white;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #111;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+}
+
+.photo img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.role {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.link a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
