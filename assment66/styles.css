@@ -1,0 +1,22 @@
+body {
+    font-family: Arial;
+}
+
+.navbar {
+    border-bottom: 1px solid black;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.active {
+    font-weight: bold;
+    border-bottom: 2px solid blue;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
