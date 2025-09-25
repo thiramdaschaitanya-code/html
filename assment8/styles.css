@@ -1,0 +1,54 @@
+body {
+    font-family: Arial;
+    background: #f3f4f6;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.login-box {
+    display: inline-block;
+    width: 300px;
+    border: 1px solid black;
+    padding: 20px;
+    background: white;
+}
+
+.header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.input {
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 8px 0;
+    text-align: left;
+    color: gray;
+}
+
+.button {
+    background: orange;
+    color: white;
+    padding: 10px;
+    margin: 12px 0;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.link {
+    color: blue;
+    margin: 5px 0;
+    font-size: 14px;
+    text-align: left;
+}
+
+.note {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.highlight {
+    color: blue;
+}
