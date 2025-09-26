@@ -1,0 +1,23 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  margin: 0;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-item {
+  font-weight: bold;
+  color: #4b2e1f; /* dark brown */
+  cursor: pointer;
+}
+
+.nav-item.active {
+  color: #b22222; /* red highlight */
+  border-bottom: 3px solid #b22222;
+  padding-bottom: 3px;
+}
