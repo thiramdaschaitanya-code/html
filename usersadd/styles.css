@@ -1,0 +1,28 @@
+const addBtn = document.getElementById("addBtn");
+const usernameInput = document.getElementById("username");
+const userList = document.getElementById("userList");
+
+let users = [];
+
+addBtn.addEventListener("click", () => {
+  let newUser = usernameInput.value.trim();
+
+  if (newUser === "") {
+    alert("Please enter a user name");
+    return;
+  }
+
+  if (users.includes(newUser.toLowerCase())) {
+    alert(`User "${newUser}" is already present in the list`);
+    return;
+  }
+
+  // Add user
+  users.push(newUser.toLowerCase());
+
+  let li = document.createElement("li");
+  li.textContent = newUser;
+  userList.appendChild(li);
+
+  usernameInput.value = "";
+});
